@@ -1,0 +1,49 @@
+
+When merging the fips code on opioid data, we made some changes in terms of the county name inconsistency between the two datasets:
+
+- county "ST. JOHN THE BAPTIST" in Louisiana
+We change the "ST JOHN THE BAPTIST" in the opioid data to "ST. JOHN THE BAPTIST".
+
+- "SAINT"
+Some counties in opioid data begins with "SAINT", while in fips data they're just "ST.". Therefore, we changed the "SAINT" in opioid data to "ST." instead.
+
+- county "DONA ANA" in New Mexico
+The county name was mistakenly written as "DODA ANA" in fips. So we change it to "DONA ANA".
+
+- county "DE SOTO"
+There are two "DE SOTO"s in our dataset, one in Florida and the other in Louisiana. However, they have very inconsistent names both in fips and opioid data. For convenience, we just change them all to "DESOTO" in both datasets.
+
+- county "DEKALB" in Alabama
+We change the "DE KALB" in opioid data to "DEKALB".
+
+- county "DEWITT" in Alabama
+We change the "DE WITT" in opioid data to "DEWITT".
+
+-----------------------------
+When merging opioid data with population
+
+- LA SALLE, Louisiana is not appeared in population data but appeared in opioid data
+
+------------------------------
+When merging vital deaths data with population, there are several inconsistencies between the fips code in deaths data and that in population data
+
+- Bedford county, VA
+The independent city of Bedford (FIPS 51515) merges into Bedford County (FIPS 51019)in 2013.
+The change was not reflected in the deaths data, and only reflected in population data in 2015. For convenience, we change it back to 51019 in 2015, population data.
+
+- Fix Clifton Forge, VA
+The independent city of Clifton Forge (FIPS 51560) merges into Alleghany county (FIPS 51005) in 2001.
+The 2015 fips of Clifton Forge in deaths data was not correct, so we change it to 51005 in compliance with the population data.
+
+- Drop Alaska in deaths data
+(As Nick requires)
+
+ 
+
+
+
+
+
+
+
+
