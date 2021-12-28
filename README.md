@@ -1,2 +1,2 @@
 # pds2021-opioids-pds6
-pds2021-opioids-pds6 created by GitHub Classroom
+This is a team project done in IDS 720: Practical Data Science in 2021 Fall at Duke
